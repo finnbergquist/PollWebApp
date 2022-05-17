@@ -1,0 +1,34 @@
+<h1>Polls</h1>
+
+
+<!--<p><%= image_tag 'art.jpg' %></p>-->
+
+
+
+<%= form_tag do%>
+    <p> Name: <%= text_field_tag(:n)%> </p>
+    <p> Question 1: <%= text_field_tag(:q1)%> </p>
+    <p> Question 2: <%= text_field_tag(:q2)%> </p>
+    <p> Question 3: <%= text_field_tag(:q3)%> </p>
+    
+    <p><%= submit_tag "Submit Answers"%></p>
+<%end %>
+
+<%= pie_chart Answer.group(:q1answer).count, title: "Question 1" %>
+<%= pie_chart Answer.group(:q2answer).count %>
+<%= pie_chart Answer.group(:q3answer).count %>
+
+
+<!--<table>
+    <thead>
+        <tr>
+            <th> Bidder </th>
+            <th> Bid </th>
+        </tr>
+    </thead> -->
+
+    
+
+</table>
+
+

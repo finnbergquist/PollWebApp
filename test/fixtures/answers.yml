@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  q1answer: 1.5
+  q2answer: 1.5
+  q3answer: 1.5
+
+two:
+  name: MyString
+  q1answer: 1.5
+  q2answer: 1.5
+  q3answer: 1.5

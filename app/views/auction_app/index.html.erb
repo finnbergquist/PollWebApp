@@ -27,7 +27,14 @@
         </tr>
     </thead> -->
 
-    
+    <tbody>
+       <% @allAnswers.each do |answer| %>
+           <tr> 
+               <td> <%=answer.name%>  </td>
+           </tr>
+       <%end%>
+    </tbody>
+
 
 </table>
 

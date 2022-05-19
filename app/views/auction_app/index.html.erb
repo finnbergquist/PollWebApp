@@ -1,8 +1,7 @@
-<h1>Polls</h1>
 
+<h1 style="border:orange; border-width:5px; border-style:solid;"> Polls</h1>
 
 <!--<p><%= image_tag 'art.jpg' %></p>-->
-
 
 
 <%= form_tag do%>
@@ -24,10 +23,10 @@
         <%end%>
     </tbody>
 </table>
+
     <%= pie_chart Answer.group(:q1answer).count, title: "Question 1" %>
     <%= pie_chart Answer.group(:q2answer).count, title: "Question 2" %>
     <%= pie_chart Answer.group(:q3answer).count, title: "Question 3" %>
-
 
 
 

@@ -1480,3 +1480,352 @@ Processing by AuctionAppController#index as HTML
 Completed 200 OK in 20ms (Views: 15.7ms | ActiveRecord: 0.9ms | Allocations: 8432)
 
 
+Started GET "/" for ::1 at 2022-05-18 15:44:39 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuctionAppController#index as HTML
+  [1m[36mAnswer Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "answers"[0m
+  ↳ app/controllers/auction_app_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering auction_app/index.html.erb within layouts/application
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q1answer" AS "answers_q1answer" FROM "answers" GROUP BY "answers"."q1answer"[0m
+  ↳ app/views/auction_app/index.html.erb:17
+  [1m[36mAnswer Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q2answer" AS "answers_q2answer" FROM "answers" GROUP BY "answers"."q2answer"[0m
+  ↳ app/views/auction_app/index.html.erb:18
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q3answer" AS "answers_q3answer" FROM "answers" GROUP BY "answers"."q3answer"[0m
+  ↳ app/views/auction_app/index.html.erb:19
+  [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  ↳ app/views/auction_app/index.html.erb:31
+  Rendered auction_app/index.html.erb within layouts/application (Duration: 49.1ms | Allocations: 33377)
+  Rendered layout layouts/application.html.erb (Duration: 64.6ms | Allocations: 49381)
+Completed 200 OK in 87ms (Views: 75.8ms | ActiveRecord: 1.3ms | Allocations: 54531)
+
+
+Started GET "/" for ::1 at 2022-05-18 16:12:47 -0400
+Processing by AuctionAppController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/auction_app_controller.rb:7:in `index'
+  [1m[36mAnswer Count (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "answers"[0m
+  ↳ app/controllers/auction_app_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering auction_app/index.html.erb within layouts/application
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q1answer" AS "answers_q1answer" FROM "answers" GROUP BY "answers"."q1answer"[0m
+  ↳ app/views/auction_app/index.html.erb:17
+  [1m[36mAnswer Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q2answer" AS "answers_q2answer" FROM "answers" GROUP BY "answers"."q2answer"[0m
+  ↳ app/views/auction_app/index.html.erb:18
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q3answer" AS "answers_q3answer" FROM "answers" GROUP BY "answers"."q3answer"[0m
+  ↳ app/views/auction_app/index.html.erb:19
+  [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  ↳ app/views/auction_app/index.html.erb:31
+  Rendered auction_app/index.html.erb within layouts/application (Duration: 11.1ms | Allocations: 4137)
+  Rendered layout layouts/application.html.erb (Duration: 24.0ms | Allocations: 6184)
+Completed 200 OK in 40ms (Views: 25.0ms | ActiveRecord: 2.1ms | Allocations: 7694)
+
+
+Started GET "/" for ::1 at 2022-05-18 22:10:20 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuctionAppController#index as HTML
+  [1m[36mAnswer Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "answers"[0m
+  ↳ app/controllers/auction_app_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering auction_app/index.html.erb within layouts/application
+  [1m[36mAnswer Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q1answer" AS "answers_q1answer" FROM "answers" GROUP BY "answers"."q1answer"[0m
+  ↳ app/views/auction_app/index.html.erb:17
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q2answer" AS "answers_q2answer" FROM "answers" GROUP BY "answers"."q2answer"[0m
+  ↳ app/views/auction_app/index.html.erb:18
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q3answer" AS "answers_q3answer" FROM "answers" GROUP BY "answers"."q3answer"[0m
+  ↳ app/views/auction_app/index.html.erb:19
+  [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  ↳ app/views/auction_app/index.html.erb:31
+  Rendered auction_app/index.html.erb within layouts/application (Duration: 121.2ms | Allocations: 33240)
+  Rendered layout layouts/application.html.erb (Duration: 153.3ms | Allocations: 49247)
+Completed 200 OK in 169ms (Views: 156.0ms | ActiveRecord: 2.2ms | Allocations: 54397)
+
+
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2022-05-18 22:14:45 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuctionAppController#index as HTML
+  [1m[36mAnswer Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "answers"[0m
+  ↳ app/controllers/auction_app_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering auction_app/index.html.erb within layouts/application
+  [1m[36mAnswer Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q1answer" AS "answers_q1answer" FROM "answers" GROUP BY "answers"."q1answer"[0m
+  ↳ app/views/auction_app/index.html.erb:17
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q2answer" AS "answers_q2answer" FROM "answers" GROUP BY "answers"."q2answer"[0m
+  ↳ app/views/auction_app/index.html.erb:18
+  [1m[36mAnswer Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q3answer" AS "answers_q3answer" FROM "answers" GROUP BY "answers"."q3answer"[0m
+  ↳ app/views/auction_app/index.html.erb:19
+  [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  ↳ app/views/auction_app/index.html.erb:31
+  Rendered auction_app/index.html.erb within layouts/application (Duration: 126.8ms | Allocations: 33041)
+  Rendered layout layouts/application.html.erb (Duration: 154.1ms | Allocations: 49048)
+Completed 200 OK in 170ms (Views: 157.2ms | ActiveRecord: 2.3ms | Allocations: 54198)
+
+
+Started GET "/" for ::1 at 2022-05-18 22:14:53 -0400
+Processing by AuctionAppController#index as HTML
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "answers"[0m
+  ↳ app/controllers/auction_app_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering auction_app/index.html.erb within layouts/application
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q1answer" AS "answers_q1answer" FROM "answers" GROUP BY "answers"."q1answer"[0m
+  ↳ app/views/auction_app/index.html.erb:17
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q2answer" AS "answers_q2answer" FROM "answers" GROUP BY "answers"."q2answer"[0m
+  ↳ app/views/auction_app/index.html.erb:18
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q3answer" AS "answers_q3answer" FROM "answers" GROUP BY "answers"."q3answer"[0m
+  ↳ app/views/auction_app/index.html.erb:19
+  [1m[36mAnswer Load (0.1ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  ↳ app/views/auction_app/index.html.erb:31
+  Rendered auction_app/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 4112)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 6159)
+Completed 200 OK in 15ms (Views: 11.9ms | ActiveRecord: 0.9ms | Allocations: 7078)
+
+
+Started GET "/" for ::1 at 2022-05-18 22:16:07 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuctionAppController#index as HTML
+  [1m[36mAnswer Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "answers"[0m
+  ↳ app/controllers/auction_app_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering auction_app/index.html.erb within layouts/application
+  [1m[36mAnswer Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q1answer" AS "answers_q1answer" FROM "answers" GROUP BY "answers"."q1answer"[0m
+  ↳ app/views/auction_app/index.html.erb:17
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q2answer" AS "answers_q2answer" FROM "answers" GROUP BY "answers"."q2answer"[0m
+  ↳ app/views/auction_app/index.html.erb:18
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q3answer" AS "answers_q3answer" FROM "answers" GROUP BY "answers"."q3answer"[0m
+  ↳ app/views/auction_app/index.html.erb:19
+  [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  ↳ app/views/auction_app/index.html.erb:31
+  Rendered auction_app/index.html.erb within layouts/application (Duration: 140.3ms | Allocations: 33009)
+  Rendered layout layouts/application.html.erb (Duration: 175.9ms | Allocations: 49016)
+Completed 200 OK in 190ms (Views: 178.3ms | ActiveRecord: 1.7ms | Allocations: 54166)
+
+
+Started GET "/" for ::1 at 2022-05-18 22:24:45 -0400
+Processing by AuctionAppController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/auction_app_controller.rb:7:in `index'
+  [1m[36mAnswer Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "answers"[0m
+  ↳ app/controllers/auction_app_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering auction_app/index.html.erb within layouts/application
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q1answer" AS "answers_q1answer" FROM "answers" GROUP BY "answers"."q1answer"[0m
+  ↳ app/views/auction_app/index.html.erb:17
+  [1m[36mAnswer Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q2answer" AS "answers_q2answer" FROM "answers" GROUP BY "answers"."q2answer"[0m
+  ↳ app/views/auction_app/index.html.erb:18
+  [1m[36mAnswer Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q3answer" AS "answers_q3answer" FROM "answers" GROUP BY "answers"."q3answer"[0m
+  ↳ app/views/auction_app/index.html.erb:19
+  [1m[36mAnswer Load (0.1ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  ↳ app/views/auction_app/index.html.erb:31
+  Rendered auction_app/index.html.erb within layouts/application (Duration: 12.4ms | Allocations: 3862)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 5909)
+Completed 200 OK in 32ms (Views: 22.9ms | ActiveRecord: 1.6ms | Allocations: 7419)
+
+
+Started POST "/" for ::1 at 2022-05-18 22:24:54 -0400
+Processing by AuctionAppController#enterBid as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "n"=>"Finn", "q1"=>"1", "q2"=>"1", "q3"=>"1", "commit"=>"Submit Answers"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/auction_app_controller.rb:31:in `block in enterBid'
+  [1m[36mAnswer Create (2.3ms)[0m  [1m[32mINSERT INTO "answers" ("name", "q1answer", "q2answer", "q3answer", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Finn"], ["q1answer", 1.0], ["q2answer", 1.0], ["q3answer", 1.0], ["created_at", "2022-05-19 02:24:54.065357"], ["updated_at", "2022-05-19 02:24:54.065357"]]
+  ↳ app/controllers/auction_app_controller.rb:31:in `block in enterBid'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/auction_app_controller.rb:31:in `block in enterBid'
+Redirected to http://localhost:3000/auction_app
+Completed 302 Found in 12ms (ActiveRecord: 3.1ms | Allocations: 3710)
+
+
+Started GET "/auction_app" for ::1 at 2022-05-18 22:24:54 -0400
+Processing by AuctionAppController#index as TURBO_STREAM
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "answers"[0m
+  ↳ app/controllers/auction_app_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering auction_app/index.html.erb within layouts/application
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q1answer" AS "answers_q1answer" FROM "answers" GROUP BY "answers"."q1answer"[0m
+  ↳ app/views/auction_app/index.html.erb:17
+  [1m[36mAnswer Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q2answer" AS "answers_q2answer" FROM "answers" GROUP BY "answers"."q2answer"[0m
+  ↳ app/views/auction_app/index.html.erb:18
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q3answer" AS "answers_q3answer" FROM "answers" GROUP BY "answers"."q3answer"[0m
+  ↳ app/views/auction_app/index.html.erb:19
+  [1m[36mAnswer Load (0.1ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  ↳ app/views/auction_app/index.html.erb:31
+  Rendered auction_app/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 3850)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 5893)
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 0.8ms | Allocations: 6795)
+
+
+Started GET "/" for ::1 at 2022-05-19 10:31:10 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuctionAppController#index as HTML
+  [1m[36mAnswer Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "answers"[0m
+  ↳ app/controllers/auction_app_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering auction_app/index.html.erb within layouts/application
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q1answer" AS "answers_q1answer" FROM "answers" GROUP BY "answers"."q1answer"[0m
+  ↳ app/views/auction_app/index.html.erb:17
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q2answer" AS "answers_q2answer" FROM "answers" GROUP BY "answers"."q2answer"[0m
+  ↳ app/views/auction_app/index.html.erb:18
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q3answer" AS "answers_q3answer" FROM "answers" GROUP BY "answers"."q3answer"[0m
+  ↳ app/views/auction_app/index.html.erb:19
+  [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  ↳ app/views/auction_app/index.html.erb:27
+  Rendered auction_app/index.html.erb within layouts/application (Duration: 93.7ms | Allocations: 32846)
+  Rendered layout layouts/application.html.erb (Duration: 120.9ms | Allocations: 48854)
+Completed 200 OK in 134ms (Views: 123.1ms | ActiveRecord: 2.0ms | Allocations: 54004)
+
+
+Started GET "/" for ::1 at 2022-05-19 10:31:42 -0400
+Processing by AuctionAppController#index as HTML
+  [1m[36mAnswer Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "answers"[0m
+  ↳ app/controllers/auction_app_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering auction_app/index.html.erb within layouts/application
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q1answer" AS "answers_q1answer" FROM "answers" GROUP BY "answers"."q1answer"[0m
+  ↳ app/views/auction_app/index.html.erb:18
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q2answer" AS "answers_q2answer" FROM "answers" GROUP BY "answers"."q2answer"[0m
+  ↳ app/views/auction_app/index.html.erb:19
+  [1m[36mAnswer Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q3answer" AS "answers_q3answer" FROM "answers" GROUP BY "answers"."q3answer"[0m
+  ↳ app/views/auction_app/index.html.erb:20
+  [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  ↳ app/views/auction_app/index.html.erb:28
+  Rendered auction_app/index.html.erb within layouts/application (Duration: 11.3ms | Allocations: 4502)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 6790)
+Completed 200 OK in 24ms (Views: 19.2ms | ActiveRecord: 1.1ms | Allocations: 8256)
+
+
+Started GET "/" for ::1 at 2022-05-19 10:32:56 -0400
+Processing by AuctionAppController#index as HTML
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "answers"[0m
+  ↳ app/controllers/auction_app_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering auction_app/index.html.erb within layouts/application
+  [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  ↳ app/views/auction_app/index.html.erb:20
+  [1m[36mAnswer Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q1answer" AS "answers_q1answer" FROM "answers" GROUP BY "answers"."q1answer"[0m
+  ↳ app/views/auction_app/index.html.erb:27
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q2answer" AS "answers_q2answer" FROM "answers" GROUP BY "answers"."q2answer"[0m
+  ↳ app/views/auction_app/index.html.erb:28
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q3answer" AS "answers_q3answer" FROM "answers" GROUP BY "answers"."q3answer"[0m
+  ↳ app/views/auction_app/index.html.erb:29
+  Rendered auction_app/index.html.erb within layouts/application (Duration: 11.0ms | Allocations: 4496)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 6784)
+Completed 200 OK in 22ms (Views: 17.9ms | ActiveRecord: 1.2ms | Allocations: 8154)
+
+
+Started POST "/" for ::1 at 2022-05-19 10:33:19 -0400
+Processing by AuctionAppController#enterBid as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "n"=>"Evan", "q1"=>"2", "q2"=>"2", "q3"=>"2", "commit"=>"Submit Answers"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/auction_app_controller.rb:31:in `block in enterBid'
+  [1m[36mAnswer Create (0.8ms)[0m  [1m[32mINSERT INTO "answers" ("name", "q1answer", "q2answer", "q3answer", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Evan"], ["q1answer", 2.0], ["q2answer", 2.0], ["q3answer", 2.0], ["created_at", "2022-05-19 14:33:19.932996"], ["updated_at", "2022-05-19 14:33:19.932996"]]
+  ↳ app/controllers/auction_app_controller.rb:31:in `block in enterBid'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/auction_app_controller.rb:31:in `block in enterBid'
+Redirected to http://localhost:3000/auction_app
+Completed 302 Found in 10ms (ActiveRecord: 1.5ms | Allocations: 3704)
+
+
+Started GET "/auction_app" for ::1 at 2022-05-19 10:33:19 -0400
+Processing by AuctionAppController#index as TURBO_STREAM
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "answers"[0m
+  ↳ app/controllers/auction_app_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering auction_app/index.html.erb within layouts/application
+  [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  ↳ app/views/auction_app/index.html.erb:20
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q1answer" AS "answers_q1answer" FROM "answers" GROUP BY "answers"."q1answer"[0m
+  ↳ app/views/auction_app/index.html.erb:27
+  [1m[36mAnswer Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q2answer" AS "answers_q2answer" FROM "answers" GROUP BY "answers"."q2answer"[0m
+  ↳ app/views/auction_app/index.html.erb:28
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q3answer" AS "answers_q3answer" FROM "answers" GROUP BY "answers"."q3answer"[0m
+  ↳ app/views/auction_app/index.html.erb:29
+  Rendered auction_app/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 3910)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 5952)
+Completed 200 OK in 17ms (Views: 13.6ms | ActiveRecord: 1.0ms | Allocations: 6855)
+
+
+Started GET "/auction_app" for ::1 at 2022-05-19 10:33:55 -0400
+Processing by AuctionAppController#index as HTML
+  [1m[36mAnswer Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "answers"[0m
+  ↳ app/controllers/auction_app_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering auction_app/index.html.erb within layouts/application
+  [1m[36mAnswer Load (0.1ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  ↳ app/views/auction_app/index.html.erb:20
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q1answer" AS "answers_q1answer" FROM "answers" GROUP BY "answers"."q1answer"[0m
+  ↳ app/views/auction_app/index.html.erb:27
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q2answer" AS "answers_q2answer" FROM "answers" GROUP BY "answers"."q2answer"[0m
+  ↳ app/views/auction_app/index.html.erb:28
+  [1m[36mAnswer Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q3answer" AS "answers_q3answer" FROM "answers" GROUP BY "answers"."q3answer"[0m
+  ↳ app/views/auction_app/index.html.erb:29
+  Rendered auction_app/index.html.erb within layouts/application (Duration: 10.9ms | Allocations: 4556)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 6844)
+Completed 200 OK in 23ms (Views: 18.0ms | ActiveRecord: 1.1ms | Allocations: 8206)
+
+
+Started GET "/auction_app" for ::1 at 2022-05-19 10:34:14 -0400
+Processing by AuctionAppController#index as HTML
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "answers"[0m
+  ↳ app/controllers/auction_app_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering auction_app/index.html.erb within layouts/application
+  [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  ↳ app/views/auction_app/index.html.erb:20
+  [1m[36mAnswer Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q1answer" AS "answers_q1answer" FROM "answers" GROUP BY "answers"."q1answer"[0m
+  ↳ app/views/auction_app/index.html.erb:27
+  [1m[36mAnswer Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q2answer" AS "answers_q2answer" FROM "answers" GROUP BY "answers"."q2answer"[0m
+  ↳ app/views/auction_app/index.html.erb:28
+  [1m[36mAnswer Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q3answer" AS "answers_q3answer" FROM "answers" GROUP BY "answers"."q3answer"[0m
+  ↳ app/views/auction_app/index.html.erb:29
+  Rendered auction_app/index.html.erb within layouts/application (Duration: 13.1ms | Allocations: 4557)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 6844)
+Completed 200 OK in 22ms (Views: 18.0ms | ActiveRecord: 1.3ms | Allocations: 8193)
+
+
+Started GET "/auction_app" for ::1 at 2022-05-19 10:34:33 -0400
+Processing by AuctionAppController#index as HTML
+  [1m[36mAnswer Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "answers"[0m
+  ↳ app/controllers/auction_app_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering auction_app/index.html.erb within layouts/application
+  [1m[36mAnswer Load (0.1ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  ↳ app/views/auction_app/index.html.erb:20
+  [1m[36mAnswer Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q1answer" AS "answers_q1answer" FROM "answers" GROUP BY "answers"."q1answer"[0m
+  ↳ app/views/auction_app/index.html.erb:27
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q2answer" AS "answers_q2answer" FROM "answers" GROUP BY "answers"."q2answer"[0m
+  ↳ app/views/auction_app/index.html.erb:28
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q3answer" AS "answers_q3answer" FROM "answers" GROUP BY "answers"."q3answer"[0m
+  ↳ app/views/auction_app/index.html.erb:29
+  Rendered auction_app/index.html.erb within layouts/application (Duration: 13.3ms | Allocations: 4594)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 6881)
+Completed 200 OK in 24ms (Views: 20.0ms | ActiveRecord: 1.1ms | Allocations: 8230)
+
+
+Started GET "/auction_app" for ::1 at 2022-05-19 10:34:44 -0400
+Processing by AuctionAppController#index as HTML
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "answers"[0m
+  ↳ app/controllers/auction_app_controller.rb:7:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering auction_app/index.html.erb within layouts/application
+  [1m[36mAnswer Load (0.1ms)[0m  [1m[34mSELECT "answers".* FROM "answers"[0m
+  ↳ app/views/auction_app/index.html.erb:20
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q1answer" AS "answers_q1answer" FROM "answers" GROUP BY "answers"."q1answer"[0m
+  ↳ app/views/auction_app/index.html.erb:27
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q2answer" AS "answers_q2answer" FROM "answers" GROUP BY "answers"."q2answer"[0m
+  ↳ app/views/auction_app/index.html.erb:28
+  [1m[36mAnswer Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "answers"."q3answer" AS "answers_q3answer" FROM "answers" GROUP BY "answers"."q3answer"[0m
+  ↳ app/views/auction_app/index.html.erb:29
+  Rendered auction_app/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 4599)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 6886)
+Completed 200 OK in 20ms (Views: 15.7ms | ActiveRecord: 0.8ms | Allocations: 8235)
+
+

@@ -14,28 +14,20 @@
     <p><%= submit_tag "Submit Answers"%></p>
 <%end %>
 
-<%= pie_chart Answer.group(:q1answer).count, title: "Question 1" %>
-<%= pie_chart Answer.group(:q2answer).count %>
-<%= pie_chart Answer.group(:q3answer).count %>
-
-
-<!--<table>
-    <thead>
-        <tr>
-            <th> Bidder </th>
-            <th> Bid </th>
-        </tr>
-    </thead> -->
-
+<table>
     <tbody>
-       <% @allAnswers.each do |answer| %>
-           <tr> 
-               <td> <%=answer.name%>  </td>
-           </tr>
-       <%end%>
+        <th> Particpants </th>
+        <% @allAnswers.each do |answer| %>
+            <tr> 
+                <td> <%=answer.name%>  </td>
+            </tr>
+        <%end%>
     </tbody>
-
-
 </table>
+    <%= pie_chart Answer.group(:q1answer).count, title: "Question 1" %>
+    <%= pie_chart Answer.group(:q2answer).count, title: "Question 2" %>
+    <%= pie_chart Answer.group(:q3answer).count, title: "Question 3" %>
+
+
 
 

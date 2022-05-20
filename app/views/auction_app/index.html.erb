@@ -2,6 +2,16 @@
 <h1 style="border:orange; border-width:5px; border-style:solid;"> Polls</h1>
 
 <!--<p><%= image_tag 'art.jpg' %></p>-->
+<p><%= image_tag "zebras.jpg", :size => "325x200", :style => "border: 3px solid black; float :right" %> </p>
+<p> <%= image_tag "goats.jpg", :size => "325x200", :style => "border: 3px solid black; float :right" %> </p>
+<p> <%= image_tag "geese.jpg", :size => "325x200", :style => "border: 3px solid black; float :right" %> </p>
+
+
+
+
+
+
+
 
 
 <%= form_tag do%>
@@ -24,9 +34,10 @@
     </tbody>
 </table>
 
-    <%= pie_chart Answer.group(:q1answer).count, title: "Question 1" %>
-    <%= pie_chart Answer.group(:q2answer).count, title: "Question 2" %>
-    <%= pie_chart Answer.group(:q3answer).count, title: "Question 3" %>
+<h2> Results </h2>
+<section> <%= pie_chart Answer.group(:q1answer).count, title: "Question 1" %> </section>
+<%= pie_chart Answer.group(:q2answer).count, title: "Question 2" %>
+<%= pie_chart Answer.group(:q3answer).count, title: "Question 3" %>
 
 
 

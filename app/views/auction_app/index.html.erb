@@ -1,29 +1,21 @@
+<body style="background-color:#CCCCFF;">
 
-<h1 style="border:orange; border-width:5px; border-style:solid;"> Polls</h1>
+<h1 style="text-align:center; border:orange; border-width:5px; border-style:solid;"> Welcome to the Zoo</h1>
 
-<!--<p><%= image_tag 'art.jpg' %></p>-->
 <p><%= image_tag "zebras.jpg", :size => "325x200", :style => "border: 3px solid black; float :right" %> </p>
-<p> <%= image_tag "goats.jpg", :size => "325x200", :style => "border: 3px solid black; float :right" %> </p>
-<p> <%= image_tag "geese.jpg", :size => "325x200", :style => "border: 3px solid black; float :right" %> </p>
-
-
-
-
-
-
-
-
+<p><%= image_tag "goats.jpg", :size => "325x200", :style => "border: 3px solid black; float :right" %> </p>
+<p><%= image_tag "geese.jpg", :size => "325x200", :style => "border: 3px solid black; float :right" %> </p>
 
 <%= form_tag do%>
-    <p> Name: <%= text_field_tag(:n)%> </p>
-    <p> Question 1: <%= text_field_tag(:q1)%> </p>
-    <p> Question 2: <%= text_field_tag(:q2)%> </p>
-    <p> Question 3: <%= text_field_tag(:q3)%> </p>
+    <p style="color:blue; "> Name: <%= text_field_tag(:n)%> </p>
+    <p style="color:red; "> How many Geese?: <%= text_field_tag(:q1)%> </p>
+    <p style="color:purple; "> How many Goats?: <%= text_field_tag(:q2)%> </p>
+    <p style="color:green;  "> How many Zebras?: <%= text_field_tag(:q3)%> </p>
     
     <p><%= submit_tag "Submit Answers"%></p>
 <%end %>
 
-<table>
+<table style= "border:black; border-width:10px; border-style:solid;">
     <tbody>
         <th> Particpants </th>
         <% @allAnswers.each do |answer| %>
@@ -35,9 +27,10 @@
 </table>
 
 <h2> Results </h2>
-<section> <%= pie_chart Answer.group(:q1answer).count, title: "Question 1" %> </section>
-<%= pie_chart Answer.group(:q2answer).count, title: "Question 2" %>
-<%= pie_chart Answer.group(:q3answer).count, title: "Question 3" %>
+<%= pie_chart Answer.group(:q1answer).count, title: "Geese Estimates" %>
+<%= pie_chart Answer.group(:q2answer).count, title: "Goat Estimates" %>
+<%= pie_chart Answer.group(:q3answer).count, title: "Zebra Estimates" %>
 
 
 
+<body>
